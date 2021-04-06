@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="470dp">
+
+        <ImageView
+            android:id="@+id/from"
+            android:layout_width="200dp"
+            android:layout_height="210dp"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/logoform" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/from"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Name"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginHorizontal="50dp"
+            android:hint="NIM"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/ipk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nim"
+            android:layout_marginHorizontal="50dp"
+            android:hint="IPK"
+            android:inputType="numberDecimal"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT" />
+    </LinearLayout>
+</LinearLayout>
